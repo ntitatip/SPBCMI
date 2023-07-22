@@ -40,3 +40,6 @@ cd SPBCMI
 python3 -m pip install --editable .
 python3 -m pip install -r requirements.txt
 ```
+## 2. Usage
+
+#### 2.1 Data processing
