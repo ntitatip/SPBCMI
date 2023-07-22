@@ -68,3 +68,21 @@ Next, in the following steps, we directly utilize the extracted features from th
 For the classification task, we have generated random negative samples to complement the dataset. The prediction results, including the AUC (Area Under the Curve) and AUPR (Area Under the Precision-Recall curve), will be saved in the "image" folder. Additionally, other evaluation metrics will be stored in the "metrics" folder.
 
 Please ensure that you have the necessary dependencies and libraries installed for the classification task. The CSV files containing the extracted features will be used as inputs for the classification algorithm.
+
+#### 2.3 Comparative Experiment of Different NLP Method
+
+In this stage of the project, we conducted a comprehensive comparison of various feature extraction methods. The corresponding code for each feature extraction approach can be found in their respective files. As in the previous step, after completing the feature extraction process, simply copy all the extracted feature files into the "comparison" folder.
+
+#### 2.4 Comparative Experiment of Different Structural Feature Extracting Method
+
+In this stage of the project, we have prepared a diverse set of network feature extraction methods for comparison and selection. The procedure for operations remains the same as in the previous steps, with the only difference being the use of relationship pairs files rather than sequence files. Here, we focus on extracting network structure features.
+
+#### 2.5 Comparative Experiment of Utilizing Different Features
+
+In this phase of the project, we aim to enhance our feature representation by combining the previously extracted features. We will concatenate the feature files obtained from different feature extraction methods and integrate them into this specific file. The remaining steps and methodologies will remain consistent with those used before.
+
+#### 2.6 Comparative Experiment of Final Results
+
+The final cross-validation results, representing the aggregated performance of the models, will be directly saved in the "5-final" directory. Within this directory, you will find comprehensive files containing the evaluation metrics and outcomes for each fold.
+
+Q & A
