@@ -9,8 +9,6 @@ In this package, we provides resources including: source codes of the SPBCMI mod
 - [Background](#background)
 - [Environment setup](#Environment-setup)
 - [Usage](#usage)
-- [Related Efforts](#related-efforts)
-- [Maintainers](#maintainers)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -63,7 +61,8 @@ Additionally, if you have your own data and wish to fine-tune the DNABERT model 
 
 #### 2.2 Comparative Experiment of Word Segementaion
 
-Next, in the following steps, we directly utilize the extracted features from the fine-tuned models for the classification task. After extracting features from each different model, save them as CSV files and copy them to the "comparison" folder. Once this is done, you can proceed with the execution.
+
+The cloud drive link contains the files named "pairs.csv" and "allnode.csv," which we have organized. Please begin by copying these files into their respective folders and placing them together with the corresponding model. Next, run the "extract_feature.py" file. This process will generate and save the resulting files in this directory. Within all folders, you will find the feature files. Copy all of them into the "comparison" folder.  Once this is done, execute the program "comparison.py"
 
 For the classification task, we have generated random negative samples to complement the dataset. The prediction results, including the AUC (Area Under the Curve) and AUPR (Area Under the Precision-Recall curve), will be saved in the "image" folder. Additionally, other evaluation metrics will be stored in the "metrics" folder.
 
@@ -71,11 +70,10 @@ Please ensure that you have the necessary dependencies and libraries installed f
 
 #### 2.3 Comparative Experiment of Different NLP Method
 
-In this stage of the project, we conducted a comprehensive comparison of various feature extraction methods. The corresponding code for each feature extraction approach can be found in their respective files. As in the previous step, after completing the feature extraction process, simply copy all the extracted feature files into the "comparison" folder.
-
+In this stage of the project, we conducted a comprehensive comparison of various sequece feature extraction methods. We have prepared multiple methods for feature extraction. To proceed, copy the "allnode.csv" file into the corresponding folders. Next, run the Python files within these folders. Upon completion, locate the generated CSV files in the directory. Copy these files into the "comparison" folder. By following these steps, you will obtain the comparative results, similar to what was demonstrated in the previous section. 
 #### 2.4 Comparative Experiment of Different Structural Feature Extracting Method
 
-In this stage of the project, we have prepared a diverse set of network feature extraction methods for comparison and selection. The procedure for operations remains the same as in the previous steps, with the only difference being the use of relationship pairs files rather than sequence files. Here, we focus on extracting network structure features.
+We have prepared multiple methods for extracting structural features. To begin, copy the "pairs" file into the corresponding folders. Next, run the Python files contained within these folders. Once the execution is completed, follow the same procedure as described in the previous section to proceed further. By doing so, you will obtain the comparative results as illustrated earlier.
 
 #### 2.5 Comparative Experiment of Utilizing Different Features
 
@@ -85,4 +83,8 @@ In this phase of the project, we aim to enhance our feature representation by co
 
 The final cross-validation results, representing the aggregated performance of the models, will be directly saved in the "5-final" directory. Within this directory, you will find comprehensive files containing the evaluation metrics and outcomes for each fold.
 
-Q & A
+## 3. Contributing
+
+Ji-Ren Zhou authored and maintains this code. If you encounter any issues or have questions, please feel free to contact the author at zhoujiren@mail.nwpu.edu.cn.
+
+## Q & A
